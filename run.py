@@ -14,7 +14,7 @@ completion = client.chat.completions.create(
     {"role": "system", "content": "You are artificial General intelligence."},
     {"role": "user", "content": user_question}  # Use the question from the file
   ],
-  temperature=0.7,
+  temperature=0.9,
 )
 
 # Сохранение ответа в файл text.txt
