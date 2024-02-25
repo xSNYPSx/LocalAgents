@@ -15,7 +15,7 @@ with open("question.txt", "r") as file:
 completion = client.chat.completions.create(
   model="local-model",  # this field is currently unused
   messages=[
-    {"role": "system", "content": "You are an AI arbitrator, an expert in everything, who must check the answers of other AIs and leave your short comment. please answer ash short as possible. Don't repeat the answers of other referees. User question: {question}"},
+    {"role": "system", "content": "You are an AI arbitrator, an expert in everything, who must check the answers of other AIs and leave your short comment. please answer ash short as possible. Don't repeat the answers of other referees. Don't blindly trust other experts, they are often wrong, do your research. User question: {question}"},
     {"role": "user", "content": ai_answer}  # Use the question from the file
   ],
   temperature=0.7,
