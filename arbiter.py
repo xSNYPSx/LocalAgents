@@ -18,7 +18,7 @@ completion = client.chat.completions.create(
     {"role": "system", "content": "You are an AI arbitrator, an expert in everything, who must check the answers of other AIs and leave your short comment. please answer ash short as possible. Don't repeat the answers of other referees. Don't blindly trust other experts, they are often wrong, do your research. User question: {question}"},
     {"role": "user", "content": ai_answer}  # Use the question from the file
   ],
-  temperature=0.7,
+  temperature=0.6,
 )
 
 # Сохранение ответа в файл text.txt
