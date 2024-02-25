@@ -7,3 +7,5 @@ First, 10 agents will express their opinion on your question regardless of each 
 
 For this to work, first launch Lm Studio and turn on the server. Please specify port 1263 in LM Studio for the script to work.
 You will also need any local model, microsoft phi-2 is the fastest, but you can try something more powerful, on average the response takes from 10 minutes to 30 minutes, depending on the number of agents and the speed of the tokens. With 10 agents, it is better not to lower the context below 5000.
+
+Enter your question to file question.txt and run agents.py script
